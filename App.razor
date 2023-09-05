@@ -1,0 +1,12 @@
+﻿<LayoutView Layout="Layout">
+    <DynamicComponent Type="Component" Parameters="Parameters" />
+</LayoutView>
+
+@code {
+    [Parameter]
+    public Type Component { get; set; }
+    [Parameter]
+    public Type Layout { get; set; }
+    [Parameter]
+    public IDictionary<string, object?>? Parameters { get; set; }
+}
